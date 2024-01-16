@@ -1,0 +1,163 @@
+.single__route {
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.single__route-img img {
+    border-radius: 15px;
+}
+
+.single__route-info h2 {
+    font-weight: 10;
+}
+
+.single__route-info span {
+    color: rgb(130, 124, 124);
+}
+
+.single__route__boxes {
+    gap: 15px;
+    display: flex;
+}
+
+.single__route-box1 {
+    width: 30px;
+    height: 30px;
+    background: lightcoral;
+    border-radius: 50%;
+}
+
+.single__route-box2 {
+    width: 30px;
+    height: 30px;
+    background: lightgreen;
+    border-radius: 50%;
+}
+
+.single__route-box3 {
+    width: 30px;
+    height: 30px;
+    background: lightskyblue;
+    border-radius: 50%;
+}
+
+.single__route-box4 {
+    width: 30px;
+    height: 30px;
+    background: rgb(242, 235, 31);
+    border-radius: 50%;
+}
+
+.single__route-box5 {
+    width: 30px;
+    height: 30px;
+    background: rgb(237, 28, 240);
+    border-radius: 50%;
+}
+
+.single__route-box6 {
+    width: 30px;
+    height: 30px;
+    background: rgb(0, 255, 251);
+    border-radius: 50%;
+}
+
+.single__route-box7 {
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+.single__rout-box1 {
+    width: 40px;
+    height: 47px;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.single__rout-box2 {
+    width: 40px;
+    text-align: center;
+    height: 47px;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+}
+
+.single__rout-box3 {
+    width: 40px;
+    text-align: center;
+    height: 47px;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+}
+
+.single__rout-box4 {
+    width: 40px;
+    text-align: center;
+    height: 47px;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+}
+
+.single__rout-box5 {
+    width: 40px;
+    text-align: center;
+    height: 47px;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+}
+
+.single__rout-box6 {
+    width: 40px;
+    height: 47px;
+    text-align: center;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+}
+
+.single__rout-box7 {
+    width: 40px;
+    height: 47px;
+    text-align: center;
+    border: 1px solid #8b8888;
+    border-radius: 3px;
+}
+
+.single__route-monthly {
+    width: 700px;
+    height: 49px;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.single__route-monthly .single__route-amount {
+    padding-top: 17px;
+    padding-left: 15px;
+}
+
+.two__btn {
+    display: flex;
+    gap: 10px;
+}
+
+.single__route-btn1 {
+    width: 150px;
+    height: 55px;
+    border-radius: 7px;
+    background: var(--bg-py);
+    color: white;
+    border: none;
+}
+
+.single__route-btn2 {
+    width: 200px;
+    height: 55px;
+    border-radius: 7px;
+    background: white;
+    color: var(--bg-py);
+    border: 1.5px solid var(--bg-py);
+    margin-left: 20px;
+}
