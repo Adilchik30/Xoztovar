@@ -24,8 +24,9 @@
 
 #select {
     border: none;
-    background: black;
-    color: #fff;
+    background: none;
+    border: none;
+    color: black;
 }
 
 /* Sub Header - end  */
@@ -65,7 +66,14 @@
     border-radius: 4px;
     display: flex;
 }
-
+sup{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-size: 11px;
+}
 .navbar__search input {
     flex: 1;
     border: none;

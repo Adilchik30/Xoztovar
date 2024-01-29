@@ -1,21 +1,35 @@
-import React from 'react'
-import './Login.css'
+import React from 'react';
+import { FaGoogle, FaGithub, FaFacebook } from "react-icons/fa6";
+
+import "./Login.css"
 function Login() {
   return (
-    <div className='container'>
-    <div className='login'>
-      <div className="login__box">
-        <h3 className='login__rec'>Telefon raqamingizni kiriting</h3>
-        <p className='login__rec'>Tasdiqlash kodi Telegram orqali yuboriladi</p>
-        <input required  className='login__inp' placeholder='Telefon raqam yoki userneym' type="text" /><br />
-        <p className='login__rec'>SMS orqali olish</p>
-        <input required type="text" className='login__inp' placeholder='Telefon raqamingiz' /><br /><br />
-        <button className='login__button'>Kodni olish</button>
-        
+    <>
+      <br />
+      <br />
+      <br />
+      <div className='container login__box'>
+        <form className="login-form">
+          <h2 className='login__h2' style={{ color: "var(--bg-py)" }}> Login</h2>
+          <label className='login__label' htmlFor="username">Username:</label>
+          <input className='login__input' type="text" id="username" name="username" required />
+
+          <label className='login__password' htmlFor="password">Password:</label>
+          <input className='login__property' type="password" id="password" name="password" required />
+
+          <button className='submit' type="submit"><a href={"./"}></a>Ro'yxatdan o'tish</button>
+        </form>
+        <br />
+        <hr />
+        <div className="login__icon">
+
+          <FaGoogle />
+          <FaGithub />
+          <FaFacebook />
+        </div>
       </div>
-    </div>
-    </div>
-  )
+    </>
+  );
 }
 
-export default Login
+export default Login;

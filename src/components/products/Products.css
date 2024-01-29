@@ -25,10 +25,11 @@
     height: 100%;
     object-fit: cover;
     transition: .7s ease;
+    user-select: none;
 }
 
 .product__card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .product__title {
@@ -62,6 +63,10 @@
 
 }
 
+.liked {
+    color: var(--bg-py);
+}
+
 .product__heart {
     position: absolute;
     top: 10px;
@@ -81,19 +86,23 @@
     display: grid;
     place-items: center;
 }
+
 @media screen and (max-width:550px) {
-   .products__wrapper{
-    gap: 8px;
-   }
-   .product__card{
-    width: calc(50% - 4px);
-   }
-   .product__image{
-    height: 270px;
-   }
+    .products__wrapper {
+        gap: 8px;
+    }
+
+    .product__card {
+        width: calc(50% - 4px);
+    }
+
+    .product__image {
+        height: 270px;
+    }
 }
+
 @media screen and (max-width:400px) {
-    .product__image{
+    .product__image {
         height: 220px;
     }
 }

@@ -1,12 +1,18 @@
 import React from 'react'
 import './Products.css'
-import { IoHeartOutline, IoCartOutline } from 'react-icons/io5';
+import { IoHeartOutline, IoCartOutline, IoHeart } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { addToWishes } from '../../context/wishesSlice'
-
+import { useDispatch, useSelector } from 'react-redux';
+import { addToWishes, removeFromWishes } from '../../context/wishesSlice'
+import { incCart } from '../../context/cartSlice';
+import { toast } from 'react-toastify';
 function Products({ title, data }) {
     const dispatch = useDispatch()
+    const wishes = useSelector((s) => s.wishes.value)
+    const handleAddCart = (el) =>{
+        dispatch(incCart(el))
+        toast.success("Savatchaga muvvafaqiyatli qo'shildi", {position:"top-center"})
+    }
     return (
         <div className='container'>
             <div className="products">
@@ -21,13 +27,22 @@ function Products({ title, data }) {
 
                             </Link>
                             <p className='product__title'>{el.title}</p>
-                            <mark className='product__monthly'>1500 so'm / oyiga</mark><br />
-                            <del className='product__old-price'>1500 so'm</del>
+                            <mark className='product__monthly'>{(el.price * 1.5 / 12).brm()} so'm / oyiga</mark><br />
+                            <del className='product__old-price'>{(el.price * 1.2)?.brm()} so'm</del>
                             <b className='product__price'>{el.price?.brm()} so'm</b>
-                            <div onClick={() => dispatch(addToWishes(el))} className="product__heart">
-                                <IoHeartOutline  />
-                            </div>
-                            <div className="product__cart">
+
+                            {wishes?.some((liked) => liked.id === el.id) ? (
+                                <div onClick={() => dispatch(removeFromWishes(el))} className="product__heart liked">
+                                    <IoHeart />
+                                </div>
+
+                            ) : (
+                                <div onClick={() => dispatch(addToWishes(el))} className="product__heart">
+                                    <IoHeartOutline />
+                                </div>
+
+                            )}
+                            <div onClick={() => handleAddCart(el)} className="product__cart">
                                 <IoCartOutline />
                             </div>
                         </div>)

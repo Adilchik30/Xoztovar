@@ -1,0 +1,35 @@
+
+.cart__img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+.cart__title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.cart__heading{
+    text-align: center;
+    font-size: 22px;
+}
+.cart__btn{
+    width: 120px;
+    height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    background: #7000FF;
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width:400px) {
+    .cart__title{
+        font-size: 16px;
+    }
+    .cart__heading{
+        font-size: 16px;
+    }
+}

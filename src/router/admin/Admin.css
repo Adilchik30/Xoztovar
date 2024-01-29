@@ -1,0 +1,74 @@
+/* ADMIN style - start */
+.admin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.admin__sidebar {
+    height: 100vh;
+    background: var(--bg-py);
+    padding: 20px;
+    color: #fff;
+}
+
+.admin__content {
+    padding: 20px;
+}
+
+.admin__links {
+    margin-top: 40px;
+}
+
+.admin__links a {
+    display: block;
+    padding: 14px 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: .19s;
+}
+
+.admin__links a.active {
+    background: #fff5;
+}
+
+.navigating__btn {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+/* ADMIN style - end */
+
+/* CREATE PRODUCT - start */
+.add__new-product {
+    display: block;
+    gap: 50px;
+}
+
+.add__new-product input,
+.add__new-product select {
+    outline: none;
+    width: 450px;
+    height: 40px;
+    background: #f1f1f1;
+    text-indent: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.file__inp {
+    justify-content: center;
+    height: 20px;
+}
+
+.create__product-btn {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2.5px;
+    background: var(--bg-py);
+    color: #fff;
+}
+
+/* CREATE PRODUCT - end */

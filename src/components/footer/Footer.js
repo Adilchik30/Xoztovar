@@ -6,8 +6,12 @@ import telegram from "../../assets/uzum market/telegram.png";
 import youtube from "../../assets/uzum market/youtube.png";
 import instagram from "../../assets/uzum market/instagram.png";
 import facebook from "../../assets/uzum market/facebook.png";
-
+import { useLocation } from "react-router-dom";
 function Footer() {
+    const { pathname } = useLocation()
+    if (pathname.includes("login") || pathname.includes("admin")) {
+        return <></>
+    }
     return (
         <div className=' container'>
             <div className="footer">

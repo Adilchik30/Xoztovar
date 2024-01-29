@@ -3,7 +3,10 @@ import './NavbarContainer.css'
 import { IoMenu, IoSearch, IoCartOutline, IoHomeOutline } from 'react-icons/io5'
 import { FaRegHeart, FaRegUser } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
 function Navbar() {
+    const carts = useSelector(state => state.cart.value)
     return (
         <div className='container navbar'>
             <NavLink to={"/"} className="navbar__logo">
@@ -26,7 +29,7 @@ function Navbar() {
                     </NavLink>
                 </li>
                 <li className='navbar__item'>
-                    <NavLink to={"/login"} className='navbar__link'>
+                    <NavLink to={"/admin"} className='navbar__link'>
                         <FaRegUser />
                         <span>Kirish</span>
                     </NavLink>
@@ -40,7 +43,14 @@ function Navbar() {
                 <li className='navbar__item'>
                     <NavLink to={"/cart"} className='navbar__link'>
                         <IoCartOutline />
-                        <span>Savatcha</span>
+                        <span>Savatcha 
+                            {
+                                carts.length ?
+                                <sup>{carts.length}</sup>
+                                :
+                                <></>
+                            }
+                                </span>
                     </NavLink>
                 </li>
             </ul>
