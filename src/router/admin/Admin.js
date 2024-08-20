@@ -15,7 +15,7 @@ function Admin() {
         <div className="admin__links">
           <NavLink to="create-product">Mahsulot qo'shish</NavLink>
           <NavLink to="manage-product">Mahsulotni ko'rish</NavLink>
-          <NavLink to="statistic">Ma'lumotlar</NavLink>
+          <NavLink to="statistic">Statistika</NavLink>
         </div>
       </div>
       <div className="admin__content">
