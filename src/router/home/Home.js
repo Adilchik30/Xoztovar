@@ -1,13 +1,13 @@
 import React from 'react'
 import Banner from '../../components/banner/Banner'
-import Products from '../../components/products/Products'
+import Infos from '../../components/infos/Infos'
 
-
-function Home({data}) {
+function Home() {
   return (
-    <div>
+    <div className='home'>
       <Banner/>
-      <Products data={data} title="Yangi chegirmalar"/>
+      <h1 style={{textAlign: "center", fontFamily: "cursive", marginTop: "20px"}}>Biz haqimizda</h1>
+      <Infos/>
     </div>
   )
 }

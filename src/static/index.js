@@ -4,6 +4,7 @@ export const PRODUCTS = [
         title: "Lenovo thinkplus lp12 simsiz quloqchinlari, TWS",
         price: 199_000,
         category: "texnika",
+        sizes: ["S", "M", "L"], // Add sizes specific to this product
         url: [
             "https://images.uzum.uz/cjjj0kkjvf2ofbh7oh5g/original.jpg"
         ]
@@ -13,8 +14,8 @@ export const PRODUCTS = [
         title: "Geympad Sony DualSense simsiz, PlayStation 5 uchun",
         price: 869_000,
         category: "texnika",
+        sizes: ["XS", "S", "M", "L"], // Different sizes
         url: [
-            "https://images.uzum.uz/clir1ql6sfhjvlnagn0g/t_product_540_high.jpg#1701443777409",
             "https://images.uzum.uz/clir1ql6sfhjvlnagn0g/t_product_540_high.jpg#1701443777409"
         ]
     },
@@ -23,6 +24,7 @@ export const PRODUCTS = [
         title: "Kir yuvish kukuni Oila tanlovi, 3 kg, Ayoz tazeligi, Avtomat",
         price: 42_000,
         category: "hojalik-tovarlari",
+        sizes: ["3 kg", "5 kg"], // Specific sizes
         url: [
             "https://images.uzum.uz/clb1d15ennt861ipub40/t_product_540_high.jpg#1701443913235"
         ]
@@ -32,6 +34,7 @@ export const PRODUCTS = [
         title: "Ryukzak eko-charmdan, uniseks, universal",
         price: 249_000,
         category: "maktab",
+        sizes: ["M", "L", "XL"], // Add sizes specific to this product
         url: [
             "https://images.uzum.uz/cj9n9cjk9fq5pecuq1ng/original.jpg"
         ]
@@ -41,7 +44,8 @@ export const PRODUCTS = [
         title: "Mikser Braun HM1070WH",
         price: 798_000,
         category: "texnika",
-        url:[
+        sizes: [], // No sizes for this product
+        url: [
             "https://images.uzum.uz/cjjj0kkjvf2ofbh7oh5g/original.jpg"
         ]
     },
@@ -50,6 +54,7 @@ export const PRODUCTS = [
         title: "Go'sht maydalagich Ardesto MGL-1790R- 1700Вт/1.6 kg-min / pomidor, sharbat / qora",
         price: 699_000,
         category: "oshxona",
+        sizes: [], // No sizes for this product
         url: [
             "https://images.uzum.uz/ck58ll4jvf2qegt46pjg/original.jpg"
         ]
@@ -59,8 +64,9 @@ export const PRODUCTS = [
         title: "Dazmol Haley HY-274",
         price: 275_000,
         category: "texnika",
-        url:[
+        sizes: [], // No sizes for this product
+        url: [
             "https://images.uzum.uz/cjnddisvutv1g2rj4mvg/original.jpg"
         ]
     },
-]
+];

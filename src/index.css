@@ -5,10 +5,11 @@
   font-family: sans-serif;
 }
 :root{
-  --bg-py: rgb(247, 0, 136);
+  --bg-py: dodgerblue;
   --bg-sy: #F2F4F7;
   --bg-gold: #FFFF00;
 }
+/* --bg-py: rgb(247, 0, 136);*/
 .container{
   max-width: 1250px;
   margin: auto;

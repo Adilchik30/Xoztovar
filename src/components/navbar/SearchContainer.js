@@ -14,7 +14,6 @@ function SearchContainer({ value }) {
       <br />
       {filterData?.map((el) => (
         <div className="search__item">
-          <img src={el.url[0]} width={50} alt="" />
           <div>
             <p>{el.title}</p>
             <b>{el.price.brm()} so'm</b>

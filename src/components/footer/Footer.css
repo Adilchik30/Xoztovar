@@ -55,5 +55,7 @@
   @media screen and (max-width: 840px) {
     .footer {
       gap: 50px;
+    justify-content: center;
+    align-content: center;
     }
   }

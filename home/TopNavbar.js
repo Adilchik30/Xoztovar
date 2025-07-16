@@ -19,9 +19,6 @@ import { FaUserCircle } from "react-icons/fa";
 function TopNavbar() {
   const userMenu = (
     <Menu>
-        <Menu.Item key="login" icon={<UserOutlined />}>
-            <Link to="/login">Kirish</Link>
-        </Menu.Item>
         <Menu.Item key="register" icon={<SettingOutlined />}>
             <Link to="/register">Ro'yxatdan o'tish</Link>
         </Menu.Item>

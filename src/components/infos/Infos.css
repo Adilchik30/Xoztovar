@@ -1,0 +1,136 @@
+.infos {
+    margin: 60px auto;
+    padding: 40px 30px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+  }
+  
+  .infos-one,
+  .infos-two,
+  .infos-three {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .infos-one .left h2,
+  .infos-two .right h2,
+  .infos-three .left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: black;
+  }
+  
+  .infos-two .right p,
+  .infos-three .left p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .infos img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+  }
+  
+  .left, .right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  /* Tablet & Mobile (≤768px) */
+  @media (max-width: 768px) {
+    .infos-one,
+    .infos-two,
+    .infos-three {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .left,
+    .right {
+      min-width: 100%;
+    }
+  
+    .infos img {
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+  
+    .infos-one .left h2,
+    .infos-two .right h2,
+    .infos-three .left h2 {
+      font-size: 18px;
+    }
+  
+    .infos-two .right p,
+    .infos-three .left p {
+      font-size: 15px;
+    }
+  }
+  
+  /* Phones (≤480px) */
+  @media (max-width: 480px) {
+    .infos {
+      padding: 20px 15px;
+      gap: 40px;
+    }
+  
+    .infos img {
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    }
+  
+    .infos-one .left h2,
+    .infos-two .right h2,
+    .infos-three .left h2 {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  
+    .infos-two .right p,
+    .infos-three .left p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* Small screens (≤320px) */
+  @media (max-width: 320px) {
+    .infos {
+      padding: 10px;
+      gap: 30px;
+    }
+  
+    .infos-one .left h2,
+    .infos-two .right h2,
+    .infos-three .left h2 {
+      font-size: 14px;
+    }
+  
+    .infos-two .right p,
+    .infos-three .left p {
+      font-size: 13px;
+    }
+  
+    .infos img {
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+  }
+  

@@ -8,50 +8,25 @@ import instagram from "../../assets/uzum market/instagram.png";
 import facebook from "../../assets/uzum market/facebook.png";
 import { useLocation } from "react-router-dom";
 function Footer() {
-    const { pathname } = useLocation()
-    if (pathname.includes("login") || pathname.includes("admin")) {
-        return <></>
-    }
-    return (
-        <div className=' container'>
-            <div className="footer">
-            <div className="Footer__info">
-                <p>Biz haqimizda</p>
-                <span>Topshirish punktlari</span>
-                <span>Vakansiyalar</span>
-            </div>
-            <div className="Footer__info">
-                <p>Foydalanuvchilarga</p>
-                <span>Topshirish punktlari</span>
-                <span>Sotuv kabinetiga kirish</span>
-            </div>
-            <div className="Footer__info">
-                <p>Tadbirkorlarga</p>
-                <span>Uzumda soting</span>
-                <span>Vakansiyalar</span>
-            </div>
-            <div className="footer__links">
-                <div className="footer__download__app">
-                    <p>Ilovani yuklab olish</p>
-                    <div className="app__play">
-                        <img src={apple} />
-                        <img src={play} />
-                    </div>
-                </div>
-                <div className="footer__share__info">
-                    <p>Uzum ijtimoiy tarmoqlarda</p>
-                    <div className="social__media">
-                        <img src={telegram} />
-                        <img src={youtube} />
-                        <img src={instagram} />
-                        <img src={facebook} />
-                    </div>
-                </div>
-            </div>
-            </div>
+  const { pathname } = useLocation();
+  if (pathname.includes("login") || pathname.includes("admin")) {
+    return <></>;
+  }
+  return (
+    <div className=" container">
+      <div className="footer">
+        <div className="Footer__info">
+          <p>Batafsil</p>
+          <span>Mo'ljal: KosonPetak, 5 Poliklinika oldida.</span>
+          <span>Telefon raqami: +998902602414</span>
         </div>
-
-    )
+        <div className="Footer__info">
+          <p>Foydalanuvchilarga</p>
+          <span>Namangan shahridagi malakali UZI <br /> mutaxassislaridan biriga albatta tashrif buyuring.</span>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

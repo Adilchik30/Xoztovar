@@ -15,50 +15,25 @@ function Navbar() {
   const carts = useSelector((state) => state.cart.value);
   const [value, setValue] = useState("");
   return (
-    <div className="container navbar">
+    <div style={{justifyContent: "space-between"}} className="container navbar">
       <NavLink to={"/"} className="navbar__logo">
-        <h2>Adilchik Bozori</h2>
+        <h2>ORIF ULTRAMED</h2>
       </NavLink>
-      <button className="navbar__btn-category">
-        <IoMenu />
-        <span>Katalog</span>
-      </button>
-      <div className="navbar__search">
-        <input
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-          type="search"
-          placeholder="Mahsulotlar va turkumlarni qidirish..."
-        />
-        <button>
-          <IoSearch />
-        </button>
-        {value ? <SearchContainer value={value} /> : <></>}
-      </div>
       <ul className="navbar__collection">
         <li className="navbar__item">
           <NavLink to={"/"} className="navbar__link">
-            <IoHomeOutline />
             <span>Asosiy sahifa</span>
           </NavLink>
         </li>
         <li className="navbar__item">
-          <NavLink to={"/admin"} className="navbar__link">
-            <FaRegUser />
-            <span>Kirish</span>
-          </NavLink>
-        </li>
-        <li className="navbar__item">
           <NavLink to={"/wishes"} className="navbar__link">
-            <FaRegHeart />
-            <span>Sevimlilar</span>
+            <span>Xizmat turlari</span>
           </NavLink>
         </li>
         <li className="navbar__item">
           <NavLink to={"/cart"} className="navbar__link">
-            <IoCartOutline />
             <span>
-              Savatcha
+              Shifokor qabuliga yozilish
               {carts.length ? <sup>{carts.length}</sup> : <></>}
             </span>
           </NavLink>

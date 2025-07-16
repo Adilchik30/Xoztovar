@@ -6,7 +6,6 @@ import Login from './router/login/Login'
 import Wishes from './router/wishes/Wishes'
 import Cart from './router/cart/Cart'
 import { PRODUCTS } from './static';
-import SingleRoute from './router/single-route/SingleRoute';
 // toastfiy
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,7 +25,6 @@ function App() {
         <Route path='/' element={<Auth />}>
           <Route path='/admin/*' element={<Admin />} />
         </Route>
-        <Route path='/product/:id' element={<SingleRoute />} />
       </Routes>
 
       <ToastContainer />

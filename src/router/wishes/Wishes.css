@@ -1,0 +1,69 @@
+.wishes-container {
+    width: 100%;
+    min-height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .wishes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+  }
+  
+  .wishes-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .lang-buttons button {
+    margin-left: 5px;
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s ease;
+  }
+  
+  .lang-buttons button.active {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .wish-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    gap: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .wish-name {
+    flex: 1;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .wish-price {
+    white-space: nowrap;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .wish-button {
+    width: 65px;
+    height: 30px;
+    border: none;
+    background: rgb(64, 64, 230);
+    color: white;
+    border-radius: 15px;
+  }
+  
